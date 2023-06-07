@@ -10,12 +10,11 @@ class WebView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: SharedAppBar(appBar: AppBar()),
-      body: FutureBuilder(builder: (context, snapshot) {
-        return SafeArea(
+      body: SafeArea(
             child: InAppWebView(
           initialUrlRequest: URLRequest(url: Uri.parse(url)),
-        ));
-      }),
+        )
+      ),
     );
   }
 }
