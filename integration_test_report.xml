@@ -1,0 +1,216 @@
+{"protocolVersion":"0.1.1","runnerVersion":null,"pid":44103,"type":"start","time":0}
+{"suite":{"id":0,"platform":"vm","path":"/Users/mayur/FlutterProjects/bachat_cards/integration_test/app_test.dart"},"type":"suite","time":0}
+{"test":{"id":1,"name":"loading /Users/mayur/FlutterProjects/bachat_cards/integration_test/app_test.dart","suiteID":0,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":0}
+{"count":1,"time":4,"type":"allSuites"}
+Running Xcode build...                                          
+ └─Compiling, linking and signing...                         9.4s
+Xcode build done.                                           40.7s
+
+[{"event":"test.startedProcess","params":{"observatoryUri":"http://127.0.0.1:64021/F4Mg-5qbqJg=/"}}]
+{"testID":1,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":58470}
+{"group":{"id":2,"suiteID":0,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":13,"line":null,"column":null,"url":null},"type":"group","time":58474}
+{"group":{"id":3,"suiteID":0,"parentID":2,"name":"Login","metadata":{"skip":false,"skipReason":null},"testCount":3,"line":12,"column":3,"url":"file:///Users/mayur/FlutterProjects/bachat_cards/Users/mayur/FlutterProjects/bachat_cards/integration_test/app_test.dart"},"type":"group","time":58474}
+{"test":{"id":4,"name":"Login Successful login","suiteID":0,"groupIDs":[2,3],"metadata":{"skip":false,"skipReason":null},"line":154,"column":5,"url":"package:flutter_test/src/widget_tester.dart"},"type":"testStart","time":58474}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.version: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":59974}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.trackViewUrl: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":59974}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.releaseNotes: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":59974}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.description: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":59974}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.version: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":60085}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.trackViewUrl: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":60085}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.releaseNotes: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":60086}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.description: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":60086}
+{"testID":4,"messageType":"print","message":"unhandled element filter; Picture key: AssetBundlePictureKey(bundle: PlatformAssetBundle#319f3(), name: \"assets/images/card.svg\", colorFilter: null)","type":"print","time":65096}
+{"testID":4,"messageType":"print","message":"[firebase_remote_config/internal] cancelled","type":"print","time":65371}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.version: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":65724}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.trackViewUrl: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":65725}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.releaseNotes: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":65725}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.description: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":65725}
+{"testID":4,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":68974}
+{"test":{"id":5,"name":"Login Wrong phone number","suiteID":0,"groupIDs":[2,3],"metadata":{"skip":false,"skipReason":null},"line":154,"column":5,"url":"package:flutter_test/src/widget_tester.dart"},"type":"testStart","time":68975}
+{"testID":4,"messageType":"print","message":"An error occurred configuring Amplify: AmplifyAlreadyConfiguredException(message: Amplify has already been configured and adding plugins after configure is not supported., recoverySuggestion: Check if Amplify is already configured using Amplify.isConfigured., underlyingException: null)","type":"print","time":69137}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.version: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":69520}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.trackViewUrl: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":69520}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.releaseNotes: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":69520}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.description: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":69520}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.version: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":71766}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.trackViewUrl: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":71766}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.releaseNotes: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":71766}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.description: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":71767}
+{"testID":5,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":77443}
+{"test":{"id":6,"name":"Login Wrong OTP entered","suiteID":0,"groupIDs":[2,3],"metadata":{"skip":false,"skipReason":null},"line":154,"column":5,"url":"package:flutter_test/src/widget_tester.dart"},"type":"testStart","time":77444}
+{"testID":4,"messageType":"print","message":"An error occurred configuring Amplify: AmplifyAlreadyConfiguredException(message: Amplify has already been configured and adding plugins after configure is not supported., recoverySuggestion: Check if Amplify is already configured using Amplify.isConfigured., underlyingException: null)","type":"print","time":77592}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.version: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":78051}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.trackViewUrl: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":78051}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.releaseNotes: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":78051}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.description: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":78051}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.version: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":78201}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.trackViewUrl: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":78201}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.releaseNotes: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":78201}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.description: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":78202}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.version: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":78630}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.trackViewUrl: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":78631}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.releaseNotes: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":78631}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.description: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":78631}
+{"testID":6,"messageType":"print","message":"verifyOtp cognito: null","type":"print","time":82544}
+{"testID":6,"messageType":"print","message":"CUSTOM_CHALLENGE","type":"print","time":82556}
+{"testID":6,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":84632}
+{"group":{"id":7,"suiteID":0,"parentID":2,"name":"View cards","metadata":{"skip":false,"skipReason":null},"testCount":3,"line":75,"column":3,"url":"file:///Users/mayur/FlutterProjects/bachat_cards/Users/mayur/FlutterProjects/bachat_cards/integration_test/app_test.dart"},"type":"group","time":84632}
+{"test":{"id":8,"name":"View cards User has only once loadable cards","suiteID":0,"groupIDs":[2,7],"metadata":{"skip":false,"skipReason":null},"line":154,"column":5,"url":"package:flutter_test/src/widget_tester.dart"},"type":"testStart","time":84632}
+{"testID":4,"messageType":"print","message":"An error occurred configuring Amplify: AmplifyAlreadyConfiguredException(message: Amplify has already been configured and adding plugins after configure is not supported., recoverySuggestion: Check if Amplify is already configured using Amplify.isConfigured., underlyingException: null)","type":"print","time":84794}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.version: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":85215}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.trackViewUrl: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":85216}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.releaseNotes: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":85216}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.description: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":85216}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.version: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":85564}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.trackViewUrl: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":85564}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.releaseNotes: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":85564}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.description: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":85564}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.version: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":85689}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.trackViewUrl: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":85690}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.releaseNotes: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":85690}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.description: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":85690}
+{"testID":8,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":93645}
+{"test":{"id":9,"name":"View cards User has only multi loadable card","suiteID":0,"groupIDs":[2,7],"metadata":{"skip":false,"skipReason":null},"line":154,"column":5,"url":"package:flutter_test/src/widget_tester.dart"},"type":"testStart","time":93645}
+{"testID":4,"messageType":"print","message":"An error occurred configuring Amplify: AmplifyAlreadyConfiguredException(message: Amplify has already been configured and adding plugins after configure is not supported., recoverySuggestion: Check if Amplify is already configured using Amplify.isConfigured., underlyingException: null)","type":"print","time":93809}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.version: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":94300}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.trackViewUrl: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":94300}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.releaseNotes: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":94300}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.description: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":94300}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.version: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":94714}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.trackViewUrl: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":94715}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.releaseNotes: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":94715}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.description: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":94715}
+{"testID":9,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":94903}
+{"test":{"id":10,"name":"View cards User has both once-loadable and multi-loadable cards","suiteID":0,"groupIDs":[2,7],"metadata":{"skip":false,"skipReason":null},"line":154,"column":5,"url":"package:flutter_test/src/widget_tester.dart"},"type":"testStart","time":94904}
+{"testID":4,"messageType":"print","message":"An error occurred configuring Amplify: AmplifyAlreadyConfiguredException(message: Amplify has already been configured and adding plugins after configure is not supported., recoverySuggestion: Check if Amplify is already configured using Amplify.isConfigured., underlyingException: null)","type":"print","time":95068}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.version: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":95074}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.trackViewUrl: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":95074}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.releaseNotes: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":95074}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.description: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":95074}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.version: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":95490}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.trackViewUrl: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":95490}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.releaseNotes: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":95490}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.description: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":95490}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.version: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":95763}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.trackViewUrl: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":95763}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.releaseNotes: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":95763}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.description: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":95763}
+{"testID":10,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":95819}
+{"group":{"id":11,"suiteID":0,"parentID":2,"name":"Purchase Once-reloadable Cards","metadata":{"skip":false,"skipReason":null},"testCount":3,"line":147,"column":3,"url":"file:///Users/mayur/FlutterProjects/bachat_cards/Users/mayur/FlutterProjects/bachat_cards/integration_test/app_test.dart"},"type":"group","time":95820}
+{"test":{"id":12,"name":"Purchase Once-reloadable Cards User enters wrong amount","suiteID":0,"groupIDs":[2,11],"metadata":{"skip":false,"skipReason":null},"line":154,"column":5,"url":"package:flutter_test/src/widget_tester.dart"},"type":"testStart","time":95820}
+{"testID":4,"messageType":"print","message":"An error occurred configuring Amplify: AmplifyAlreadyConfiguredException(message: Amplify has already been configured and adding plugins after configure is not supported., recoverySuggestion: Check if Amplify is already configured using Amplify.isConfigured., underlyingException: null)","type":"print","time":95983}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.version: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":96099}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.trackViewUrl: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":96099}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.releaseNotes: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":96100}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.description: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":96100}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.version: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":96419}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.trackViewUrl: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":96420}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.releaseNotes: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":96420}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.description: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":96420}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.version: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":97024}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.trackViewUrl: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":97024}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.releaseNotes: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":97024}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.description: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":97024}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.version: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":98802}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.trackViewUrl: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":98803}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.releaseNotes: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":98803}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.description: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":98803}
+{"testID":12,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":100400}
+{"test":{"id":13,"name":"Purchase Once-reloadable Cards User enters invalid name","suiteID":0,"groupIDs":[2,11],"metadata":{"skip":false,"skipReason":null},"line":154,"column":5,"url":"package:flutter_test/src/widget_tester.dart"},"type":"testStart","time":100400}
+{"testID":4,"messageType":"print","message":"An error occurred configuring Amplify: AmplifyAlreadyConfiguredException(message: Amplify has already been configured and adding plugins after configure is not supported., recoverySuggestion: Check if Amplify is already configured using Amplify.isConfigured., underlyingException: null)","type":"print","time":100571}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.version: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":100974}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.trackViewUrl: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":100974}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.releaseNotes: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":100974}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.description: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":100974}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.version: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":103433}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.trackViewUrl: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":103433}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.releaseNotes: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":103433}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.description: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":103433}
+{"testID":13,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":103832}
+{"test":{"id":14,"name":"Purchase Once-reloadable Cards Payment failure","suiteID":0,"groupIDs":[2,11],"metadata":{"skip":false,"skipReason":null},"line":154,"column":5,"url":"package:flutter_test/src/widget_tester.dart"},"type":"testStart","time":103832}
+{"testID":4,"messageType":"print","message":"An error occurred configuring Amplify: AmplifyAlreadyConfiguredException(message: Amplify has already been configured and adding plugins after configure is not supported., recoverySuggestion: Check if Amplify is already configured using Amplify.isConfigured., underlyingException: null)","type":"print","time":103989}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.version: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":104490}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.trackViewUrl: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":104490}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.releaseNotes: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":104490}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.description: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":104490}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.version: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":104575}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.trackViewUrl: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":104575}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.releaseNotes: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":104575}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.description: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":104575}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.version: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":104929}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.trackViewUrl: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":104929}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.releaseNotes: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":104929}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.description: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":104929}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.version: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":105050}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.trackViewUrl: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":105050}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.releaseNotes: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":105050}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.description: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":105050}
+{"testID":14,"messageType":"print","message":"card","type":"print","time":118922}
+{"testID":14,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":119654}
+{"group":{"id":15,"suiteID":0,"parentID":2,"name":"Reload Multi-loadable card","metadata":{"skip":false,"skipReason":null},"testCount":1,"line":238,"column":3,"url":"file:///Users/mayur/FlutterProjects/bachat_cards/Users/mayur/FlutterProjects/bachat_cards/integration_test/app_test.dart"},"type":"group","time":119655}
+{"test":{"id":16,"name":"Reload Multi-loadable card User enter invalid amount","suiteID":0,"groupIDs":[2,15],"metadata":{"skip":false,"skipReason":null},"line":154,"column":5,"url":"package:flutter_test/src/widget_tester.dart"},"type":"testStart","time":119655}
+{"testID":4,"messageType":"print","message":"An error occurred configuring Amplify: AmplifyAlreadyConfiguredException(message: Amplify has already been configured and adding plugins after configure is not supported., recoverySuggestion: Check if Amplify is already configured using Amplify.isConfigured., underlyingException: null)","type":"print","time":119828}
+{"testID":4,"messageType":"print","message":"Get balance error : {\"referenceNumber\":5182125281,\"loadAmount\":null,\"redeemAmount\":null,\"blockedAmount\":null,\"availableAmount\":null,\"monthlyReloadableAmount\":null,\"responseCode\":50,\"responseMessage\":\"Some error occurred\",\"cardBalanceDetailList\":[{\"referenceNumber\":5182125281,\"loadAmount\":0,\"redeemAmount\":0,\"availableAmount\":0,\"blockedAmount\":0,\"monthlyReloadableAmount\":0,\"responseCode\":50}],\"error\":{\"code\":\"500\",\"error\":true}}","type":"print","time":121763}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.version: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":123315}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.trackViewUrl: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":123315}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.releaseNotes: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":123315}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.description: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":123315}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.version: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":123341}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.trackViewUrl: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":123341}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.releaseNotes: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":123341}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.description: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":123341}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.version: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":123349}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.trackViewUrl: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":123349}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.releaseNotes: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":123349}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.description: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":123349}
+{"testID":16,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":126196}
+{"group":{"id":17,"suiteID":0,"parentID":2,"name":"Redeem Points","metadata":{"skip":false,"skipReason":null},"testCount":2,"line":299,"column":3,"url":"file:///Users/mayur/FlutterProjects/bachat_cards/Users/mayur/FlutterProjects/bachat_cards/integration_test/app_test.dart"},"type":"group","time":126197}
+{"test":{"id":18,"name":"Redeem Points Not enough points","suiteID":0,"groupIDs":[2,17],"metadata":{"skip":false,"skipReason":null},"line":154,"column":5,"url":"package:flutter_test/src/widget_tester.dart"},"type":"testStart","time":126197}
+{"testID":4,"messageType":"print","message":"An error occurred configuring Amplify: AmplifyAlreadyConfiguredException(message: Amplify has already been configured and adding plugins after configure is not supported., recoverySuggestion: Check if Amplify is already configured using Amplify.isConfigured., underlyingException: null)","type":"print","time":126362}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.version: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":126986}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.trackViewUrl: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":126986}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.releaseNotes: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":126986}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.description: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":126986}
+{"testID":18,"messageType":"print","message":"upgrader.ITunesResults.version: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":127226}
+{"testID":18,"messageType":"print","message":"upgrader.ITunesResults.trackViewUrl: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":127226}
+{"testID":18,"messageType":"print","message":"upgrader.ITunesResults.releaseNotes: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":127226}
+{"testID":18,"messageType":"print","message":"upgrader.ITunesResults.description: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":127226}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.version: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":128984}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.trackViewUrl: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":128985}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.releaseNotes: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":128985}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.description: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":128985}
+{"testID":18,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":132250}
+{"test":{"id":19,"name":"Redeem Points Redeem successful","suiteID":0,"groupIDs":[2,17],"metadata":{"skip":false,"skipReason":null},"line":154,"column":5,"url":"package:flutter_test/src/widget_tester.dart"},"type":"testStart","time":132251}
+{"testID":4,"messageType":"print","message":"An error occurred configuring Amplify: AmplifyAlreadyConfiguredException(message: Amplify has already been configured and adding plugins after configure is not supported., recoverySuggestion: Check if Amplify is already configured using Amplify.isConfigured., underlyingException: null)","type":"print","time":132421}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.version: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":133118}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.trackViewUrl: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":133119}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.releaseNotes: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":133119}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.description: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":133119}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.version: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":133516}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.trackViewUrl: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":133517}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.releaseNotes: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":133517}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.description: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":133517}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.version: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":133824}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.trackViewUrl: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":133825}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.releaseNotes: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":133825}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.description: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":133825}
+{"testID":19,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":148013}
+{"group":{"id":20,"suiteID":0,"parentID":2,"name":"Transactions","metadata":{"skip":false,"skipReason":null},"testCount":1,"line":376,"column":3,"url":"file:///Users/mayur/FlutterProjects/bachat_cards/Users/mayur/FlutterProjects/bachat_cards/integration_test/app_test.dart"},"type":"group","time":148014}
+{"test":{"id":21,"name":"Transactions No transactions available","suiteID":0,"groupIDs":[2,20],"metadata":{"skip":false,"skipReason":null},"line":154,"column":5,"url":"package:flutter_test/src/widget_tester.dart"},"type":"testStart","time":148015}
+{"testID":4,"messageType":"print","message":"An error occurred configuring Amplify: AmplifyAlreadyConfiguredException(message: Amplify has already been configured and adding plugins after configure is not supported., recoverySuggestion: Check if Amplify is already configured using Amplify.isConfigured., underlyingException: null)","type":"print","time":148175}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.version: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":148696}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.trackViewUrl: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":148696}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.releaseNotes: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":148696}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.description: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":148696}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.version: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":148808}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.trackViewUrl: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":148808}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.releaseNotes: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":148808}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.description: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":148808}
+{"testID":21,"messageType":"print","message":"upgrader.ITunesResults.version: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":149185}
+{"testID":21,"messageType":"print","message":"upgrader.ITunesResults.trackViewUrl: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":149186}
+{"testID":21,"messageType":"print","message":"upgrader.ITunesResults.releaseNotes: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":149186}
+{"testID":21,"messageType":"print","message":"upgrader.ITunesResults.description: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":149186}
+{"testID":21,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":150690}
+{"test":{"id":22,"name":"(tearDownAll)","suiteID":0,"groupIDs":[2],"metadata":{"skip":false,"skipReason":null},"line":42,"column":5,"url":"package:integration_test/integration_test.dart"},"type":"testStart","time":150691}
+{"testID":22,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":150694}
+{"success":true,"type":"done","time":151462}

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "580032590821",
+    "project_id": "bachatcard-380ea",
+    "storage_bucket": "bachatcard-380ea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:580032590821:android:168fde4de9a5b790b9750c",
+        "android_client_info": {
+          "package_name": "com.earnest_fintech.bachat_cards"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "580032590821-1t3f0gc68v7lvr4rpklp2091i2aq3l69.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMnTHyB6mlEZt0hzIZYEGTLVdikXYEpik"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "580032590821-1t3f0gc68v7lvr4rpklp2091i2aq3l69.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

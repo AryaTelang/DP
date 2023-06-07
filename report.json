@@ -1,0 +1,154 @@
+{"protocolVersion":"0.1.1","runnerVersion":null,"pid":3538,"type":"start","time":0}
+{"suite":{"id":0,"platform":"vm","path":"/Users/mayur/FlutterProjects/bachat_cards/integration_test/app_test.dart"},"type":"suite","time":0}
+{"test":{"id":1,"name":"loading /Users/mayur/FlutterProjects/bachat_cards/integration_test/app_test.dart","suiteID":0,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":0}
+{"count":1,"time":4,"type":"allSuites"}
+Running Xcode build...                                          
+ └─Compiling, linking and signing...                         8.9s
+Xcode build done.                                           38.9s
+
+[{"event":"test.startedProcess","params":{"observatoryUri":"http://127.0.0.1:54150/z-KOHMuKc4g=/"}}]
+{"testID":1,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":55829}
+{"group":{"id":2,"suiteID":0,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":4,"line":null,"column":null,"url":null},"type":"group","time":55831}
+{"group":{"id":3,"suiteID":0,"parentID":2,"name":"Login","metadata":{"skip":false,"skipReason":null},"testCount":3,"line":12,"column":3,"url":"file:///Users/mayur/FlutterProjects/bachat_cards/Users/mayur/FlutterProjects/bachat_cards/integration_test/app_test.dart"},"type":"group","time":55832}
+{"test":{"id":4,"name":"Login Successful login","suiteID":0,"groupIDs":[2,3],"metadata":{"skip":false,"skipReason":null},"line":154,"column":5,"url":"package:flutter_test/src/widget_tester.dart"},"type":"testStart","time":55832}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.version: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":57342}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.trackViewUrl: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":57343}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.releaseNotes: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":57343}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.description: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":57343}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.version: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":57759}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.trackViewUrl: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":57760}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.releaseNotes: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":57760}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.description: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":57760}
+{"testID":4,"messageType":"print","message":"unhandled element filter; Picture key: AssetBundlePictureKey(bundle: PlatformAssetBundle#d82d2(), name: \"assets/images/card.svg\", colorFilter: null)","type":"print","time":62315}
+{"testID":4,"messageType":"print","message":"[firebase_remote_config/internal] cancelled","type":"print","time":62569}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.version: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":63043}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.trackViewUrl: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":63044}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.releaseNotes: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":63044}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.description: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":63044}
+{"testID":4,"messageType":"print","message":"══╡ EXCEPTION CAUGHT BY WIDGETS LIBRARY ╞═══════════════════════════════════════════════════════════","type":"print","time":66335}
+{"testID":4,"messageType":"print","message":"The following FormatException was thrown building Obx(has builder, dirty, state: _ObxState#b27b8):","type":"print","time":66335}
+{"testID":4,"messageType":"print","message":"Unexpected end of input (at character 1)","type":"print","time":66335}
+{"testID":4,"messageType":"print","message":"","type":"print","time":66335}
+{"testID":4,"messageType":"print","message":"^","type":"print","time":66337}
+{"testID":4,"messageType":"print","message":"","type":"print","time":66337}
+{"testID":4,"messageType":"print","message":"The relevant error-causing widget was:","type":"print","time":66337}
+{"testID":4,"messageType":"print","message":"  Obx","type":"print","time":66338}
+{"testID":4,"messageType":"print","message":"  Obx:file:///Users/mayur/FlutterProjects/bachat_cards/lib/screens/bottom_nav_bar_screens/home_screen.dart:79:22","type":"print","time":66338}
+{"testID":4,"messageType":"print","message":"","type":"print","time":66338}
+{"testID":4,"messageType":"print","message":"When the exception was thrown, this was the stack:","type":"print","time":66338}
+{"testID":4,"messageType":"print","message":"#0      _ChunkedJsonParser.fail (dart:convert-patch/convert_patch.dart:1383:5)","type":"print","time":66338}
+{"testID":4,"messageType":"print","message":"#1      _ChunkedJsonParser.close (dart:convert-patch/convert_patch.dart:501:7)","type":"print","time":66338}
+{"testID":4,"messageType":"print","message":"#2      _parseJson (dart:convert-patch/convert_patch.dart:36:10)","type":"print","time":66338}
+{"testID":4,"messageType":"print","message":"#3      JsonDecoder.convert (dart:convert/json.dart:610:36)","type":"print","time":66338}
+{"testID":4,"messageType":"print","message":"#4      JsonCodec.decode (dart:convert/json.dart:216:41)","type":"print","time":66338}
+{"testID":4,"messageType":"print","message":"#5      jsonDecode (dart:convert/json.dart:155:10)","type":"print","time":66338}
+{"testID":4,"messageType":"print","message":"#6      RemoteConfigService.getImages (package:bachat_cards/sevrices/remote_config_service.dart:23:7)","type":"print","time":66338}
+{"testID":4,"messageType":"print","message":"#7      _HomeScreenState.build.<anonymous closure>.<anonymous closure> (package:bachat_cards/screens/bottom_nav_bar_screens/home_screen.dart:83:33)","type":"print","time":66338}
+{"testID":4,"messageType":"print","message":"#8      Obx.build (package:get/get_state_manager/src/rx_flutter/rx_obx_widget.dart:70:28)","type":"print","time":66338}
+{"testID":4,"messageType":"print","message":"#9      RxInterface.notifyChildren (package:get/get_rx/src/rx_types/rx_core/rx_interface.dart:26:27)","type":"print","time":66339}
+{"testID":4,"messageType":"print","message":"#10     _ObxState.build (package:get/get_state_manager/src/rx_flutter/rx_obx_widget.dart:54:19)","type":"print","time":66342}
+{"testID":4,"messageType":"print","message":"#11     StatefulElement.build (package:flutter/src/widgets/framework.dart:5080:27)","type":"print","time":66342}
+{"testID":4,"messageType":"print","message":"#12     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:4968:15)","type":"print","time":66342}
+{"testID":4,"messageType":"print","message":"#13     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5133:11)","type":"print","time":66342}
+{"testID":4,"messageType":"print","message":"#14     Element.rebuild (package:flutter/src/widgets/framework.dart:4690:5)","type":"print","time":66343}
+{"testID":4,"messageType":"print","message":"#15     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:4950:5)","type":"print","time":66343}
+{"testID":4,"messageType":"print","message":"#16     StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5124:11)","type":"print","time":66343}
+{"testID":4,"messageType":"print","message":"#17     ComponentElement.mount (package:flutter/src/widgets/framework.dart:4944:5)","type":"print","time":66343}
+{"testID":4,"messageType":"print","message":"...     Normal element mounting (74 frames)","type":"print","time":66343}
+{"testID":4,"messageType":"print","message":"#91     Element.inflateWidget (package:flutter/src/widgets/framework.dart:3953:16)","type":"print","time":66343}
+{"testID":4,"messageType":"print","message":"#92     MultiChildRenderObjectElement.inflateWidget (package:flutter/src/widgets/framework.dart:6512:36)","type":"print","time":66343}
+{"testID":4,"messageType":"print","message":"#93     MultiChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:6524:32)","type":"print","time":66343}
+{"testID":4,"messageType":"print","message":"...     Normal element mounting (9 frames)","type":"print","time":66343}
+{"testID":4,"messageType":"print","message":"#102    Element.inflateWidget (package:flutter/src/widgets/framework.dart:3953:16)","type":"print","time":66343}
+{"testID":4,"messageType":"print","message":"#103    Element.updateChild (package:flutter/src/widgets/framework.dart:3676:20)","type":"print","time":66343}
+{"testID":4,"messageType":"print","message":"#104    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:4993:16)","type":"print","time":66343}
+{"testID":4,"messageType":"print","message":"#105    StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5133:11)","type":"print","time":66343}
+{"testID":4,"messageType":"print","message":"#106    Element.rebuild (package:flutter/src/widgets/framework.dart:4690:5)","type":"print","time":66344}
+{"testID":4,"messageType":"print","message":"#107    BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:2743:19)","type":"print","time":66344}
+{"testID":4,"messageType":"print","message":"#108    WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:863:21)","type":"print","time":66344}
+{"testID":4,"messageType":"print","message":"#109    RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:381:5)","type":"print","time":66344}
+{"testID":4,"messageType":"print","message":"#110    SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1289:15)","type":"print","time":66344}
+{"testID":4,"messageType":"print","message":"#111    SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1218:9)","type":"print","time":66344}
+{"testID":4,"messageType":"print","message":"#112    LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:1710:13)","type":"print","time":66344}
+{"testID":4,"messageType":"print","message":"#113    SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1076:5)","type":"print","time":66344}
+{"testID":4,"messageType":"print","message":"#117    _invoke (dart:ui/hooks.dart:147:10)","type":"print","time":66344}
+{"testID":4,"messageType":"print","message":"#118    PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:338:5)","type":"print","time":66344}
+{"testID":4,"messageType":"print","message":"#119    _drawFrame (dart:ui/hooks.dart:112:31)","type":"print","time":66344}
+{"testID":4,"messageType":"print","message":"(elided 3 frames from dart:async)","type":"print","time":66344}
+{"testID":4,"messageType":"print","message":"","type":"print","time":66344}
+{"testID":4,"messageType":"print","message":"════════════════════════════════════════════════════════════════════════════════════════════════════","type":"print","time":66344}
+{"testID":4,"error":"Test failed. See exception logs above.\nThe test description was: Successful login","stackTrace":"","isFailure":false,"type":"error","time":66347}
+{"testID":4,"result":"error","skipped":false,"hidden":false,"type":"testDone","time":66347}
+{"test":{"id":5,"name":"Login Wrong phone number","suiteID":0,"groupIDs":[2,3],"metadata":{"skip":false,"skipReason":null},"line":154,"column":5,"url":"package:flutter_test/src/widget_tester.dart"},"type":"testStart","time":66347}
+{"testID":4,"messageType":"print","message":"An error occurred configuring Amplify: AmplifyAlreadyConfiguredException(message: Amplify has already been configured and adding plugins after configure is not supported., recoverySuggestion: Check if Amplify is already configured using Amplify.isConfigured., underlyingException: null)","type":"print","time":66579}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.version: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":67082}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.trackViewUrl: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":67082}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.releaseNotes: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":67082}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.description: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":67083}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.version: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":69188}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.trackViewUrl: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":69188}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.releaseNotes: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":69189}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.description: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":69189}
+{"testID":5,"messageType":"print","message":"══╡ EXCEPTION CAUGHT BY SCHEDULER LIBRARY ╞═════════════════════════════════════════════════════════","type":"print","time":74827}
+{"testID":5,"messageType":"print","message":"The following LateError was thrown during a scheduler callback:","type":"print","time":74827}
+{"testID":5,"messageType":"print","message":"LateInitializationError: Field 'cardsPageController' has not been initialized.","type":"print","time":74827}
+{"testID":5,"messageType":"print","message":"","type":"print","time":74828}
+{"testID":5,"messageType":"print","message":"When the exception was thrown, this was the stack:","type":"print","time":74828}
+{"testID":5,"messageType":"print","message":"#0      HomeScreenController.cardsPageController (package:bachat_cards/controllers/home_screen_controller.dart)","type":"print","time":74828}
+{"testID":5,"messageType":"print","message":"#1      HomeScreenController.onClose (package:bachat_cards/controllers/home_screen_controller.dart:29:5)","type":"print","time":74829}
+{"testID":5,"messageType":"print","message":"#2      GetLifeCycleBase._onDelete (package:get/get_instance/src/lifecycle.dart:79:5)","type":"print","time":74829}
+{"testID":5,"messageType":"print","message":"#3      InternalFinalCallback.call (package:get/get_instance/src/lifecycle.dart:12:26)","type":"print","time":74829}
+{"testID":5,"messageType":"print","message":"#4      GetInstance.delete (package:get/get_instance/src/get_instance.dart:382:17)","type":"print","time":74829}
+{"testID":5,"messageType":"print","message":"#5      RouterReportManager._removeDependencyByRoute (package:get/get_navigation/src/router_report.dart:105:35)","type":"print","time":74829}
+{"testID":5,"messageType":"print","message":"#6      RouterReportManager.reportRouteDispose.<anonymous closure> (package:get/get_navigation/src/router_report.dart:54:9)","type":"print","time":74829}
+{"testID":5,"messageType":"print","message":"#7      SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1289:15)","type":"print","time":74829}
+{"testID":5,"messageType":"print","message":"#8      SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1227:9)","type":"print","time":74829}
+{"testID":5,"messageType":"print","message":"#9      LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:1710:13)","type":"print","time":74829}
+{"testID":5,"messageType":"print","message":"#10     SchedulerBinding.scheduleWarmUpFrame.<anonymous closure> (package:flutter/src/scheduler/binding.dart:942:7)","type":"print","time":74829}
+{"testID":5,"messageType":"print","message":"#25     _RawReceivePort._handleMessage (dart:isolate-patch/isolate_patch.dart:192:26)","type":"print","time":74829}
+{"testID":5,"messageType":"print","message":"(elided 14 frames from class _Timer, dart:async, dart:async-patch, and package:stack_trace)","type":"print","time":74829}
+{"testID":5,"messageType":"print","message":"════════════════════════════════════════════════════════════════════════════════════════════════════","type":"print","time":74829}
+{"testID":5,"error":"Test failed. See exception logs above.\nThe test description was: Wrong phone number","stackTrace":"","isFailure":false,"type":"error","time":74830}
+{"testID":5,"result":"error","skipped":false,"hidden":false,"type":"testDone","time":74830}
+{"test":{"id":6,"name":"Login Wrong OTP entered","suiteID":0,"groupIDs":[2,3],"metadata":{"skip":false,"skipReason":null},"line":154,"column":5,"url":"package:flutter_test/src/widget_tester.dart"},"type":"testStart","time":74830}
+{"testID":4,"messageType":"print","message":"An error occurred configuring Amplify: AmplifyAlreadyConfiguredException(message: Amplify has already been configured and adding plugins after configure is not supported., recoverySuggestion: Check if Amplify is already configured using Amplify.isConfigured., underlyingException: null)","type":"print","time":74984}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.version: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":75474}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.trackViewUrl: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":75474}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.releaseNotes: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":75474}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.description: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":75474}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.version: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":75626}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.trackViewUrl: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":75626}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.releaseNotes: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":75627}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.description: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":75627}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.version: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":75919}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.trackViewUrl: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":75919}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.releaseNotes: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":75920}
+{"testID":4,"messageType":"print","message":"upgrader.ITunesResults.description: RangeError (index): Invalid value: Valid value range is empty: 0","type":"print","time":75920}
+{"testID":6,"messageType":"print","message":"verifyOtp cognito: null","type":"print","time":80319}
+{"testID":6,"messageType":"print","message":"CUSTOM_CHALLENGE","type":"print","time":80330}
+{"testID":6,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":82296}
+{"group":{"id":7,"suiteID":0,"parentID":2,"name":"View cards","metadata":{"skip":false,"skipReason":null},"testCount":1,"line":75,"column":3,"url":"file:///Users/mayur/FlutterProjects/bachat_cards/Users/mayur/FlutterProjects/bachat_cards/integration_test/app_test.dart"},"type":"group","time":82297}
+{"test":{"id":8,"name":"View cards User has only once loadable cards","suiteID":0,"groupIDs":[2,7],"metadata":{"skip":false,"skipReason":null},"line":154,"column":5,"url":"package:flutter_test/src/widget_tester.dart"},"type":"testStart","time":82297}
+{"testID":4,"messageType":"print","message":"An error occurred configuring Amplify: AmplifyAlreadyConfiguredException(message: Amplify has already been configured and adding plugins after configure is not supported., recoverySuggestion: Check if Amplify is already configured using Amplify.isConfigured., underlyingException: null)","type":"print","time":82448}
+{"testID":8,"messageType":"print","message":"══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════","type":"print","time":82630}
+{"testID":8,"messageType":"print","message":"The following assertion was thrown running a test:","type":"print","time":82630}
+{"testID":8,"messageType":"print","message":"The finder \"zero widgets with text \"SKIP\" (ignoring offstage widgets)\" (used in a call to \"tap()\")","type":"print","time":82630}
+{"testID":8,"messageType":"print","message":"could not find any matching widgets.","type":"print","time":82631}
+{"testID":8,"messageType":"print","message":"","type":"print","time":82631}
+{"testID":8,"messageType":"print","message":"When the exception was thrown, this was the stack:","type":"print","time":82631}
+{"testID":8,"messageType":"print","message":"#0      WidgetController._getElementPoint (package:flutter_test/src/controller.dart:1224:7)","type":"print","time":82631}
+{"testID":8,"messageType":"print","message":"#1      WidgetController.getCenter (package:flutter_test/src/controller.dart:1163:12)","type":"print","time":82631}
+{"testID":8,"messageType":"print","message":"#2      WidgetController.tap (package:flutter_test/src/controller.dart:504:18)","type":"print","time":82631}
+{"testID":8,"messageType":"print","message":"#3      main.<anonymous closure>.<anonymous closure> (file:///Users/mayur/FlutterProjects/bachat_cards/integration_test/app_test.dart:81:26)","type":"print","time":82631}
+{"testID":8,"messageType":"print","message":"<asynchronous suspension>","type":"print","time":82631}
+{"testID":8,"messageType":"print","message":"<asynchronous suspension>","type":"print","time":82633}
+{"testID":8,"messageType":"print","message":"(elided one frame from package:stack_trace)","type":"print","time":82633}
+{"testID":8,"messageType":"print","message":"","type":"print","time":82633}
+{"testID":8,"messageType":"print","message":"The test description was:","type":"print","time":82633}
+{"testID":8,"messageType":"print","message":"  User has only once loadable cards","type":"print","time":82633}
+{"testID":8,"messageType":"print","message":"════════════════════════════════════════════════════════════════════════════════════════════════════","type":"print","time":82633}
+{"testID":8,"error":"Test failed. See exception logs above.\nThe test description was: User has only once loadable cards","stackTrace":"","isFailure":false,"type":"error","time":82634}
+{"testID":8,"result":"error","skipped":false,"hidden":false,"type":"testDone","time":82634}
+{"test":{"id":9,"name":"(tearDownAll)","suiteID":0,"groupIDs":[2],"metadata":{"skip":false,"skipReason":null},"line":42,"column":5,"url":"package:integration_test/integration_test.dart"},"type":"testStart","time":82634}
+{"testID":9,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":82693}
+{"success":false,"type":"done","time":83211}
