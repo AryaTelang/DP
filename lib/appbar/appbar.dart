@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
-class SharedAppBar extends StatelessWidget with PreferredSizeWidget {
+class SharedAppBar extends StatelessWidget implements PreferredSizeWidget {
   SharedAppBar({super.key, this.actions, required this.appBar, this.title});
 
   List<Widget>? actions;
@@ -11,6 +11,7 @@ class SharedAppBar extends StatelessWidget with PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      backgroundColor: Colors.transparent,
       title: title,
       actions: actions,
     );

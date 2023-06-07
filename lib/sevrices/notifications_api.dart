@@ -14,7 +14,7 @@ class NotificationsApi {
               'This channel is required to recieve exciting offers and rewards from the app',
           importance: Importance.max,
           largeIcon: DrawableResourceAndroidBitmap("@mipmap/ic_launcher")),
-      iOS: IOSNotificationDetails(
+      iOS: DarwinNotificationDetails(
           presentAlert: true, presentBadge: true, presentSound: true),
     );
   }
@@ -22,12 +22,12 @@ class NotificationsApi {
   static Future init({bool initScheduled = false}) async {
     const androidSettings =
         AndroidInitializationSettings('@mipmap/ic_launcher');
-    const iosSettings = IOSInitializationSettings();
+    const iosSettings = DarwinInitializationSettings();
     const settings =
         InitializationSettings(android: androidSettings, iOS: iosSettings);
     await _notifications.initialize(settings,
-        onSelectNotification: (payload) async {
-      onNotifications.add(payload);
+        onDidReceiveNotificationResponse: (payload) async {
+      onNotifications.add(payload.toString());
     });
   }
 

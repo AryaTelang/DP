@@ -1,7 +1,10 @@
+import 'dart:io';
+
 import 'package:bachat_cards/appbar/appbar.dart';
 import 'package:bachat_cards/controllers/login_screen_controler.dart';
 import 'package:bachat_cards/screens/auth_screens/signup_screen.dart';
 import 'package:bachat_cards/theme/theme.dart';
+import 'package:bachat_cards/wdigets/new_background.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -17,10 +20,13 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: SharedAppBar(
+      extendBodyBehindAppBar: true,
+      appBar: Platform.isAndroid
+          ? null
+          : SharedAppBar(
         appBar: AppBar(),
       ),
-      body: Stack(
+      body: BackgroundWidget(childWidget: Stack(
         children: [
           Positioned(
               top: -MediaQuery.of(context).size.height / 4,
@@ -74,7 +80,7 @@ class LoginScreen extends StatelessWidget {
                               return null;
                             },
                             controller:
-                                loginScreenController.phoneEditingController,
+                            loginScreenController.phoneEditingController,
                             decoration: const InputDecoration(
                               prefixIcon: Icon(Icons.smartphone),
                               fillColor: Color(0xFFF4F6FA),
@@ -87,19 +93,19 @@ class LoginScreen extends StatelessWidget {
                         ),
                         const Spacer(),
                         Obx(
-                          () => ElevatedButton(
+                              () => ElevatedButton(
                             onPressed: () {
                               if (_formKey.currentState!.validate()) {
                                 loginScreenController.isLoading.value = true;
                                 if (loginScreenController
-                                        .phoneEditingController.text.length ==
+                                    .phoneEditingController.text.length ==
                                     13) {
                                   loginScreenController.login(
                                       loginScreenController
                                           .phoneEditingController.text,
                                       dio);
                                 } else if (loginScreenController
-                                        .phoneEditingController.text.length ==
+                                    .phoneEditingController.text.length ==
                                     10) {
                                   loginScreenController.login(
                                       '+91${loginScreenController.phoneEditingController.text}',
@@ -114,19 +120,19 @@ class LoginScreen extends StatelessWidget {
                                     borderRadius: BorderRadius.circular(8))),
                             child: loginScreenController.isLoading.value
                                 ? const Center(
-                                    child: SizedBox(
-                                      height: 20,
-                                      width: 20,
-                                      child: CircularProgressIndicator(
-                                        strokeWidth: 2,
-                                        color: Colors.white,
-                                      ),
-                                    ),
-                                  )
+                              child: SizedBox(
+                                height: 20,
+                                width: 20,
+                                child: CircularProgressIndicator(
+                                  strokeWidth: 2,
+                                  color: Colors.white,
+                                ),
+                              ),
+                            )
                                 : const Text(
-                                    'Send OTP',
-                                    style: latoBold16,
-                                  ),
+                              'Send OTP',
+                              style: latoBold16,
+                            ),
                           ),
                         ),
                         TextButton(
@@ -144,7 +150,7 @@ class LoginScreen extends StatelessWidget {
             );
           }),
         ],
-      ),
+      )),
     );
   }
 }
