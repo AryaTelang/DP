@@ -1,4 +1,5 @@
 import 'package:amazon_cognito_identity_dart_2/cognito.dart';
+import 'package:amplify_auth_cognito/amplify_auth_cognito.dart';
 import 'package:amplify_flutter/amplify_flutter.dart';
 import 'package:bachat_cards/controllers/login_screen_controler.dart';
 import 'package:bachat_cards/screens/auth_screens/login_screen.dart';
