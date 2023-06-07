@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../appbar/appbar.dart';
-import '../../controllers/search_controller.dart';
+import '../../controllers/search_controller.dart' as sc;
 import '../../sevrices/shared_prefs.dart';
 import '../../theme/theme.dart';
 
@@ -18,7 +18,7 @@ class SearchRewardsScreen extends StatefulWidget {
 }
 
 class _SearchRewardsScreenState extends State<SearchRewardsScreen> {
-  final searchController = Get.put(SearchController());
+  final searchController = Get.put(sc.SearchController());
   final Dio dio = Dio(BaseOptions(
       headers: {'Authorization': 'Bearer ${SharedPrefs.getToken()}'}));
   final TextEditingController searchTextController = TextEditingController();
