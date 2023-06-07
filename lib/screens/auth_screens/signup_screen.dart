@@ -2,9 +2,12 @@ import 'dart:io';
 
 import 'package:bachat_cards/controllers/signup_screen_controller.dart';
 import 'package:bachat_cards/screens/auth_screens/login_screen.dart';
+import 'package:bachat_cards/wdigets/new_background.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_html/flutter_html.dart';
 import 'package:get/get.dart';
+import 'package:backdrop/backdrop.dart';
 
 import '../../appbar/appbar.dart';
 import '../../theme/theme.dart';
@@ -39,12 +42,13 @@ class SignupScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBodyBehindAppBar: true,
       appBar: Platform.isAndroid
           ? null
           : SharedAppBar(
               appBar: AppBar(),
             ),
-      body: LayoutBuilder(
+      body: BackgroundWidget(childWidget: LayoutBuilder(
         builder: (context, constraints) => SingleChildScrollView(
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20),
@@ -99,18 +103,18 @@ class SignupScreen extends StatelessWidget {
                         children: [
                           Obx(
                             (() => Checkbox(
-                                  fillColor:
-                                      MaterialStateProperty.resolveWith<Color>(
-                                          (states) {
+                              fillColor:
+                              MaterialStateProperty.resolveWith<Color>(
+                                      (states) {
                                     return primaryColor;
                                   }),
-                                  onChanged: (val) {
-                                    controller.termsCheck.value = val!;
-                                  },
-                                  value: controller.termsCheck.value,
-                                  materialTapTargetSize:
-                                      MaterialTapTargetSize.shrinkWrap,
-                                )),
+                              onChanged: (val) {
+                                controller.termsCheck.value = val!;
+                              },
+                              value: controller.termsCheck.value,
+                              materialTapTargetSize:
+                              MaterialTapTargetSize.shrinkWrap,
+                            )),
                           ),
                           Expanded(
                             child: RichText(
@@ -121,7 +125,7 @@ class SignupScreen extends StatelessWidget {
                                   children: [
                                     TextSpan(
                                       recognizer:
-                                          controller.tapGestureRecognizer,
+                                      controller.tapGestureRecognizer,
                                       text: 'terms and conditions',
                                       style: latoRegular16.copyWith(
                                           color: primaryColor, fontSize: 14),
@@ -138,7 +142,7 @@ class SignupScreen extends StatelessWidget {
                       ),
                       const Spacer(),
                       Obx(
-                        () => ElevatedButton(
+                            () => ElevatedButton(
                           onPressed: () {
                             if (_formKey.currentState!.validate()) {
                               if (controller.termsCheck.value) {
@@ -160,19 +164,19 @@ class SignupScreen extends StatelessWidget {
                                   borderRadius: BorderRadius.circular(8))),
                           child: controller.isLoading.value
                               ? const Center(
-                                  child: SizedBox(
-                                    height: 20,
-                                    width: 20,
-                                    child: CircularProgressIndicator(
-                                      strokeWidth: 2,
-                                      color: Colors.white,
-                                    ),
-                                  ),
-                                )
+                            child: SizedBox(
+                              height: 20,
+                              width: 20,
+                              child: CircularProgressIndicator(
+                                strokeWidth: 2,
+                                color: Colors.white,
+                              ),
+                            ),
+                          )
                               : const Text(
-                                  'Sign Up',
-                                  style: latoBold16,
-                                ),
+                            'Sign Up',
+                            style: latoBold16,
+                          ),
                         ),
                       ),
                       TextButton(
@@ -189,7 +193,7 @@ class SignupScreen extends StatelessWidget {
             ),
           ),
         ),
-      ),
+      )),
     );
   }
 }
