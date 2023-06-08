@@ -1,6 +1,7 @@
 import 'package:bachat_cards/screens/auth_screens/login_screen.dart';
 import 'package:bachat_cards/screens/auth_screens/signup_screen.dart';
 import 'package:bachat_cards/theme/theme.dart';
+import 'package:bachat_cards/wdigets/new_background.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
@@ -10,8 +11,7 @@ class IsNewUserScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Stack(
+    return BackgroundWidget(childWidget: Stack(
         children: [
           Positioned(
               top: -MediaQuery.of(context).size.height / 5 + 50,
@@ -99,7 +99,7 @@ class IsNewUserScreen extends StatelessWidget {
             );
           }),
         ],
-      ),
+      )
     );
   }
 }

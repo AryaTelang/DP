@@ -17,14 +17,16 @@ class BackgroundWidget extends StatelessWidget {
             end: Alignment.bottomCenter),
       ),
 
-      child: Padding(
-        padding: EdgeInsets.only(top: 250),
-        child: Container(
-          decoration: BoxDecoration(
-            color: Colors.white,
-            borderRadius: BorderRadius.only(topLeft: Radius.circular(55), topRight: Radius.circular(55)),
+      child: SingleChildScrollView(
+        child: Padding(
+          padding: EdgeInsets.only(top: 250),
+          child: Container(
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.only(topLeft: Radius.circular(40), topRight: Radius.circular(40)),
+            ),
+            child: childWidget,
           ),
-          child: childWidget,
         ),
       ),
     );
