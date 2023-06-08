@@ -11,7 +11,8 @@ class IsNewUserScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BackgroundWidget(childWidget: Stack(
+    return Scaffold(
+        body: Stack(
         children: [
           Positioned(
               top: -MediaQuery.of(context).size.height / 5 + 50,
