@@ -116,7 +116,7 @@ class _PostLoginScreenState extends State<PostLoginScreen> {
                     ? primaryColor
                     : null,
               ),
-              label: 'Dashboard',
+              label: 'My Cards',
             ),
             BottomNavigationBarItem(
               icon: ImageIcon(
@@ -138,7 +138,7 @@ class _PostLoginScreenState extends State<PostLoginScreen> {
                     ? primaryColor
                     : null,
               ),
-              label: 'Rewards',
+              label: 'Cashback',
             ),
             BottomNavigationBarItem(
               icon: ImageIcon(
