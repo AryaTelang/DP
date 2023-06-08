@@ -7,7 +7,6 @@ import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_html/flutter_html.dart';
 import 'package:get/get.dart';
-import 'package:backdrop/backdrop.dart';
 
 import '../../appbar/appbar.dart';
 import '../../theme/theme.dart';
