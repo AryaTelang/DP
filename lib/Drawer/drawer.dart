@@ -1,6 +1,11 @@
 import 'package:amplify_flutter/amplify_flutter.dart';
 import 'package:bachat_cards/controllers/post_login_screen_controller.dart';
 import 'package:bachat_cards/screens/auth_screens/is_new_user_screen.dart';
+import 'package:bachat_cards/screens/card_screens/kyc_screen.dart';
+import 'package:bachat_cards/screens/card_screens/kycnew.dart';
+import 'package:bachat_cards/screens/drawer_screens/voucherCardNew.dart';
+import 'package:bachat_cards/screens/payment_status_screens/pending_screen.dart';
+import 'package:bachat_cards/screens/payment_status_screens/success_screen.dart';
 import 'package:bachat_cards/sevrices/firebase_analytics.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -82,6 +87,8 @@ class SharedDrawer extends StatelessWidget {
               Get.to(() => TransactionsScreen());
             },
           ),
+
+
           ListTile(
             title: const Text('My Vouchers'),
             leading: SvgPicture.asset(
@@ -104,6 +111,32 @@ class SharedDrawer extends StatelessWidget {
               AnalyticsService.logScreenName(screenName: 'Account');
               postLoginScreenController.updateIndex(4);
               Navigator.pop(context);
+            },
+          ),
+          ListTile(
+            title: const Text('KYC Status'),
+            leading: SvgPicture.asset(
+              'assets/images/kyc_status.svg',color: Colors.black,
+              height: 20,
+            ),
+
+            onTap: () {
+              AnalyticsService.logScreenName(screenName: 'KYCScreen');
+              Navigator.pop(context);
+              Get.to(() => KYCNew());
+            },
+          ),
+          ListTile(
+            title: const Text('Only for demo vouch Page'),
+            leading: SvgPicture.asset(
+              'assets/images/kyc_status.svg',color: Colors.black,
+              height: 20,
+            ),
+
+            onTap: () {
+              AnalyticsService.logScreenName(screenName: 'KYCScreen');
+              Navigator.pop(context);
+              Get.to(() => VoucherCardNew());
             },
           ),
           ListTile(

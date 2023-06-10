@@ -1,5 +1,6 @@
 import 'package:bachat_cards/Constants/constants.dart';
 import 'package:bachat_cards/screens/card_screens/kyc_details_screen.dart';
+import 'package:bachat_cards/screens/card_screens/kycnew.dart';
 import 'package:bachat_cards/theme/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -31,9 +32,27 @@ class KYCScreen extends StatelessWidget {
               const SizedBox(
                 height: 16,
               ),
+              GestureDetector(
+                child: Align(
+                  alignment: Alignment.centerRight,
+                  child: Text(
+                    "new screen",
+                    style: TextStyle(
+                      decoration: TextDecoration.underline,
+                      color: Color(0xff0056D2),
+                      fontSize: 13.5,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                ),
+                onTap: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => KYCNew()));
+                },
+              ),
               const Text(
                 'To get a multi-loadable card you must do a KYC (Min KYC ,Max KYC)',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700),
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700,fontFamily: "Poppins"),
               ),
               const SizedBox(
                 height: 40,

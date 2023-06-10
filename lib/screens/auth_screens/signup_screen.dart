@@ -48,6 +48,7 @@ class SignupScreen extends StatelessWidget {
               appBar: AppBar(),
             ),
       body: BackgroundWidget(childWidget: LayoutBuilder(
+
         builder: (context, constraints) => SingleChildScrollView(
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20),

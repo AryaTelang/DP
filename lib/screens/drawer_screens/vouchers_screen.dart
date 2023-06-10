@@ -20,10 +20,8 @@ class VouchersScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: SharedAppBar(
-        appBar: AppBar(),
-        title: Text(
-          'My Vouchers',
-          style: poppinsSemiBold18.copyWith(color: Colors.black),
+        appBar: AppBar(
+
         ),
       ),
       body: RefreshIndicator(onRefresh: () {

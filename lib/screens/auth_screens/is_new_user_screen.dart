@@ -29,71 +29,69 @@ class IsNewUserScreen extends StatelessWidget {
                 radius: MediaQuery.of(context).size.width / 2,
               )),
           LayoutBuilder(builder: (context, constraints) {
-            return SingleChildScrollView(
-              child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20),
-                child: ConstrainedBox(
-                  constraints: BoxConstraints(minHeight: constraints.maxHeight),
-                  child: IntrinsicHeight(
-                    child: Column(
-                      mainAxisSize: MainAxisSize.max,
-                      children: [
-                        const SizedBox(
-                          height: 50,
+            return Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: ConstrainedBox(
+                constraints: BoxConstraints(minHeight: constraints.maxHeight),
+                child: IntrinsicHeight(
+                  child: Column(
+                    mainAxisSize: MainAxisSize.max,
+                    children: [
+                      const SizedBox(
+                        height: 50,
+                      ),
+                      SvgPicture.asset(
+                        'assets/images/hello.svg',
+                        width: MediaQuery.of(context).size.width - 20,
+                        height: MediaQuery.of(context).size.width - 20,
+                      ),
+                      const Spacer(),
+                      const Text(
+                        'Ready to get started',
+                        style: TextStyle(
+                            fontFamily: 'Montserrat',
+                            fontWeight: FontWeight.w700,
+                            fontSize: 24),
+                      ),
+                      const Spacer(),
+                      ElevatedButton(
+                        onPressed: () {
+                          Get.to(() => SignupScreen());
+                        },
+                        style: ElevatedButton.styleFrom(
+                            elevation: 0,
+                            minimumSize: const Size.fromHeight(44),
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(8))),
+                        child: Text(
+                          'New User',
+                          style: latoRegular16.copyWith(color: Colors.white),
                         ),
-                        SvgPicture.asset(
-                          'assets/images/hello.svg',
-                          width: MediaQuery.of(context).size.width - 20,
-                          height: MediaQuery.of(context).size.width - 20,
-                        ),
-                        const Spacer(),
-                        const Text(
-                          'Ready to get started',
+                      ),
+                      const SizedBox(
+                        height: 16,
+                      ),
+                      OutlinedButton(
+                        onPressed: () {
+                          Get.to(() => LoginScreen());
+                        },
+                        style: OutlinedButton.styleFrom(
+                            side: const BorderSide(color: primaryColor),
+                            minimumSize: const Size.fromHeight(44),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(8),
+                            )),
+                        child: const Text(
+                          'Existing User',
                           style: TextStyle(
                               fontFamily: 'Montserrat',
-                              fontWeight: FontWeight.w700,
-                              fontSize: 24),
+                              fontWeight: FontWeight.w500,
+                              color: primaryColor),
                         ),
-                        const Spacer(),
-                        ElevatedButton(
-                          onPressed: () {
-                            Get.to(() => SignupScreen());
-                          },
-                          style: ElevatedButton.styleFrom(
-                              elevation: 0,
-                              minimumSize: const Size.fromHeight(44),
-                              shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(8))),
-                          child: Text(
-                            'New User',
-                            style: latoRegular16.copyWith(color: Colors.white),
-                          ),
-                        ),
-                        const SizedBox(
-                          height: 16,
-                        ),
-                        OutlinedButton(
-                          onPressed: () {
-                            Get.to(() => LoginScreen());
-                          },
-                          style: OutlinedButton.styleFrom(
-                              side: const BorderSide(color: primaryColor),
-                              minimumSize: const Size.fromHeight(44),
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(8),
-                              )),
-                          child: const Text(
-                            'Existing User',
-                            style: TextStyle(
-                                fontFamily: 'Montserrat',
-                                fontWeight: FontWeight.w500,
-                                color: primaryColor),
-                          ),
-                        ),
-                        const Spacer(),
-                        const Spacer()
-                      ],
-                    ),
+                      ),
+                      const Spacer(),
+                      const Spacer()
+                    ],
                   ),
                 ),
               ),

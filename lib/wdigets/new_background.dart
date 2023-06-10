@@ -7,17 +7,17 @@ class BackgroundWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: MediaQuery.of(context).size.height,
-      width: MediaQuery.of(context).size.width,
-      decoration: BoxDecoration(
-        gradient: LinearGradient(
-            colors: [Color(0xFF7C64FF), Color(0xFF130078)],
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter),
-      ),
+    return SingleChildScrollView(
+      child: Container(
+        height: MediaQuery.of(context).size.height,
+        width: MediaQuery.of(context).size.width,
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+              colors: [Color(0xFF7C64FF), Color(0xFF130078)],
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter),
+        ),
 
-      child: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.only(top: 250),
           child: Container(

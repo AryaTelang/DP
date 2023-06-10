@@ -112,6 +112,10 @@ class _SuccessScreenState extends State<SuccessScreen> {
 
   @override
   Widget build(BuildContext context) {
+    var height,width,size;
+    size=MediaQuery.of(context).size;
+    height=size.height;
+    width=size.width;
     return Scaffold(
       appBar: Platform.isIOS ? AppBar() : null,
       body: Center(
@@ -119,103 +123,88 @@ class _SuccessScreenState extends State<SuccessScreen> {
         padding: const EdgeInsets.symmetric(horizontal: 20),
         child: SingleChildScrollView(
           child: Column(mainAxisSize: MainAxisSize.min, children: [
-            RichText(
-              textAlign: TextAlign.center,
-              text: TextSpan(
-                text:
-                    'Your ${widget.type == CardType.multiReload ? "request was placed " : "payment was "}',
-                style: poppinsBold20.copyWith(color: Colors.black),
+            SizedBox(height: 40,),
+            Image.asset('assets/images/greentick.png',height: 100,),
+            SizedBox(height: 20,),
+            Text("Success",style: TextStyle(fontSize: 24,fontWeight: FontWeight.w700),),
+            Text("Order placed",style: TextStyle(color: Colors.grey,fontSize: 14),),
+
+            SizedBox(height: 20,),
+            Row(
+              children: [
+                SizedBox(width: 20,),
+                Text("Payment Status",
+                  style: poppinsSemiBold24.copyWith(color:grey,fontSize: 16),),
+                SizedBox(width: width*0.35,),
+                Text("Success",style: TextStyle(fontWeight: FontWeight.w700,color: Color(0xffff6b6b)),),
+              ],
+            ),
+            SizedBox(height: 10,),
+
+            Row(
+              children: [
+                SizedBox(width: 20,),
+                Text("Reciever Email",
+                  style: poppinsSemiBold24.copyWith(color:grey,fontSize: 16),),
+                SizedBox(width: width*0.3,),
+                Text("Reciever Email",style: TextStyle(fontWeight: FontWeight.w700),),
+              ],
+            ),
+            SizedBox(height: 10,),
+
+            Row(
+
+              children:
+              [
+                SizedBox(width: 20,),
+                Text("Date",
+                  style: poppinsSemiBold24.copyWith(color:grey,fontSize: 16),),
+                SizedBox(width: width*0.6,),
+                Align(alignment:AlignmentDirectional.bottomEnd,child: Text("Date",style: TextStyle(fontWeight: FontWeight.w700),)),
+              ],
+            ),
+            SizedBox(height: 10,),
+
+            Row(
+              children: [
+                SizedBox(width: 20,),
+                Text("Amount",
+                  style: poppinsSemiBold24.copyWith(color:grey,fontSize: 16),),
+                SizedBox(width: width*0.55,),
+                Text("Rs.7",style: TextStyle(fontWeight: FontWeight.w700),),
+              ],
+            ),
+
+
+
+            SizedBox(height: 10,),
+
+            if (widget.type != CardType.multiReload)
+              Row(
                 children: [
-                  TextSpan(
-                    text: 'successfully ',
-                    style: poppinsBold20.copyWith(
-                      color: Colors.green[500],
-                    ),
-                  ),
-                  if (widget.type != CardType.multiReload)
-                    TextSpan(
-                        text: 'done !',
-                        style: poppinsBold20.copyWith(color: Colors.black))
+
+                  SizedBox(width: 20,),
+                  Text("Order ID",
+                    style: poppinsSemiBold24.copyWith(color:grey,fontSize: 16),),
+                  SizedBox(width: width*0.36,),
+                  Text(widget.orderId,style: TextStyle(fontWeight: FontWeight.w700),),
                 ],
               ),
-            ),
-            _spacer16(),
-            Image.asset('assets/images/success.png'),
-            _spacer16(),
-            _spacer16(),
-            if (widget.type != CardType.multiReload)
-              RichText(
-                text: TextSpan(
-                    text: 'Your order ID: ',
-                    style: const TextStyle(
-                      fontFamily: 'Lato',
-                      fontSize: 16,
-                      fontWeight: FontWeight.w700,
-                      color: Color(0xFFFFC100),
-                    ),
-                    children: [
-                      TextSpan(
-                        text: widget.orderId,
-                        style: const TextStyle(
-                          fontFamily: 'Lato',
-                          fontSize: 16,
-                          fontWeight: FontWeight.w700,
-                          color: Colors.black,
-                        ),
-                      )
-                    ]),
+            SizedBox(height: height/3,),
+            SizedBox(
+              width: width*0.9,
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+
+                    backgroundColor: primaryColor,
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 40, vertical: 15)),
+                child: const Text(
+                  'Order Status',
+                  style: TextStyle(fontWeight: FontWeight.w500,fontSize: 16),
+                ),
+                onPressed: () {},
               ),
-            _spacer16(),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20),
-              child: RichText(
-                textAlign: TextAlign.center,
-                text: TextSpan(
-                    text: widget.type == CardType.multiReloadAddAmount
-                        ? 'Your paymnet was successful and your card will be loaded withinin next 30 minutes. You can track the order status in my orders in profile or by tapping '
-                        : widget.type == CardType.onceReload
-                            ? 'Your paymnet was successful and your digital card will be delivered to you withinin next 30 minutes. You can track the order status in my orders in profile or by tapping '
-                            : widget.type == CardType.multiReload
-                                ? 'Your order was successfully placed and your digital card will be delivered to you withinin next 30 minutes. You can track the order status in my orders in profile or by tapping '
-                                : 'Your paymnet was successful and can start the KYC now or later from the home screen',
-                    style: latoBold16.copyWith(color: grey),
-                    children: [
-                      if (widget.type == CardType.multiReloadAddAmount ||
-                          widget.type == CardType.onceReload ||
-                          widget.type == CardType.multiReload)
-                        TextSpan(
-                            text: 'here',
-                            style: const TextStyle(color: Colors.blue),
-                            recognizer: _tapRecognizer)
-                    ]),
-              ),
-            ),
-            _spacer16(),
-            _spacer16(),
-            if (widget.kycType != null)
-              OutlinedButton(
-                onPressed: () {
-                  if (widget.kycType == KYCType.max) {
-                    initiateKyc();
-                  } else if (widget.kycType == KYCType.min) {
-                    initiateMinKYC();
-                  }
-                },
-                child: const Text('Proceed to KYC'),
-              ),
-            _spacer16(),
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                  backgroundColor: primaryColor,
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 40, vertical: 15)),
-              child: const Text(
-                'Back to home',
-              ),
-              onPressed: () {
-                Navigator.of(context).popUntil((route) => route.isFirst);
-                // Get.(PostLoginScreen.routeName, (route) => false);
-              },
             ),
           ]),
         ),

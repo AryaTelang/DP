@@ -3,6 +3,7 @@ import 'package:bachat_cards/controllers/cards_controller.dart';
 import 'package:bachat_cards/controllers/dashboard_controller.dart';
 import 'package:bachat_cards/controllers/home_screen_controller.dart';
 import 'package:bachat_cards/screens/card_screens/kyc_screen.dart';
+import 'package:bachat_cards/screens/card_screens/kycnew.dart';
 import 'package:bachat_cards/theme/theme.dart';
 import 'package:bachat_cards/wdigets/no_card_widget.dart';
 import 'package:dio/dio.dart';
@@ -12,11 +13,14 @@ import 'package:intl/intl.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../../sevrices/firebase_analytics.dart';
 import '../../sevrices/shared_prefs.dart';
 import '../../wdigets/card_widget.dart';
 import '../../wdigets/kyc_widget.dart';
 import '../card_screens/add_money_screen.dart';
+import '../card_screens/kyc_details_screen.dart';
 import '../card_screens/web_view.dart';
+import 'home_screen.dart';
 
 class DashboardScreen extends StatefulWidget {
   const DashboardScreen({super.key});
@@ -58,70 +62,159 @@ class _DashboardScreenState extends State<DashboardScreen>
     super.initState();
   }
 
+  var size, height, width;
   @override
   Widget build(BuildContext context) {
     super.build(context);
-    return Column(
-      children: [
-        Center(
-          child: Container(
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(8),
-                border: Border.all(color: primaryColor)),
-            child: TabBar(
-                padding: EdgeInsets.zero,
-                isScrollable: true,
-                unselectedLabelColor: Colors.black,
-                labelColor: Colors.white,
-                controller: _tabController,
-                indicator: BoxDecoration(
-                    color: primaryColor,
-                    borderRadius: BorderRadius.circular(8)),
-                tabs: const [
-                  Tab(
-                    child: Text(
-                      'Once-loadable',
+    size = MediaQuery.of(context).size;
+    height = size.height;
+    width = size.width;
+    return Container(
+      decoration: BoxDecoration(
+          gradient: LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              colors: [Color(0xff7C64FF), Color(0xff130078)])),
+      child: Scaffold(
+        resizeToAvoidBottomInset: false,
+        extendBodyBehindAppBar: true,
+        appBar: AppBar(
+          elevation: 0,
+          backgroundColor: Colors.transparent,
+          leading: IconButton(
+            icon: Icon(
+              Icons.arrow_back,
+              color: Colors.white,
+              size: 30,
+            ),
+            onPressed: () => Get.to(() => const HomeScreen()),
+          ),
+        ),
+        backgroundColor: Colors.transparent,
+        body: SingleChildScrollView(
+          child: Column(
+            children: [
+              SizedBox(
+                height: 50,
+              ),
+              Row(
+                children: [
+                  SizedBox(
+                    width: 30,
+                  ),
+                  Align(
+                      alignment: Alignment.centerLeft,
+                      child: Text(
+                        "Dashboard",
+                        style: TextStyle(
+                            fontSize: 30,
+                            fontWeight: FontWeight.w700,
+                            color: Colors.white),
+                      )),
+                ],
+              ),
+              SizedBox(
+                height: 5,
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 30),
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: Container(
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(8),
+                        border: Border.all(color: Colors.white)),
+                    child: TabBar(
+                        padding: EdgeInsets.zero,
+                        isScrollable: true,
+                        unselectedLabelColor: Colors.white,
+                        labelColor: Colors.white,
+                        controller: _tabController,
+                        indicator: BoxDecoration(
+                            color: Color(0xff2800FE),
+                            borderRadius: BorderRadius.circular(8)),
+                        onTap: (index) {
+                          _tabController.animateTo(index);
+                          setState(() {
+                            _tabController.index = index;
+                          }); // Trigger a rebuild to update the tab indicator
+                        },
+                        tabs: [
+                          Tab(
+                            child: Text(
+                              'Gift Cards',
+                              style: TextStyle(
+                                  color: _tabController.index == 0
+                                      ? Colors.white
+                                      : Color(0xff2800fe)),
+                            ),
+                          ),
+                          Tab(
+                            child: Text('Reloadable Cards',
+                                style: TextStyle(
+                                    color: _tabController.index == 1
+                                        ? Colors.white
+                                        : Color(0xff2800fe))),
+                          )
+                        ]),
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Container(
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(40),
+                    boxShadow: [
+                      BoxShadow(
+                          color: Colors.black,
+                          offset: Offset(2, 2),
+                          blurRadius: 10,
+                          spreadRadius: 2)
+                    ],
+                    color: Colors.white),
+                width: width,
+                height: height * 0.8,
+                child: Expanded(
+                  flex: 5,
+                  child: Padding(
+                    padding: const EdgeInsets.only(top: 5),
+                    child: Padding(
+                      padding: const EdgeInsets.all(10),
+                      child: TabBarView(
+                          controller: _tabController,
+                          physics: const NeverScrollableScrollPhysics(),
+                          children: [
+                            LayoutBuilder(builder: (context, constraints) {
+                              if (constraints.maxWidth > 600) {
+                                dashboardController.cardsPageController =
+                                    PageController(viewportFraction: 0.2);
+                              } else {
+                                dashboardController.cardsPageController =
+                                    PageController(viewportFraction: 0.5);
+                              }
+                              return OnceLoadableWidget(
+                                cardsController: cardsController,
+                                dashboardController: dashboardController,
+                                dio: dio,
+                              );
+                            }),
+                            MultiLoadableWidget(
+                              cardsController: cardsController,
+                              dashboardController: dashboardController,
+                              dio: dio,
+                            )
+                          ]),
                     ),
                   ),
-                  Tab(
-                    child: Text('Multi-loadable'),
-                  )
-                ]),
+                ),
+              ),
+            ],
           ),
         ),
-        Expanded(
-          child: Padding(
-            padding: const EdgeInsets.only(top: 14),
-            child: Padding(
-              padding: const EdgeInsets.all(20),
-              child: TabBarView(
-                  controller: _tabController,
-                  physics: const NeverScrollableScrollPhysics(),
-                  children: [
-                    LayoutBuilder(builder: (context, constraints) {
-                      if (constraints.maxWidth > 600) {
-                        dashboardController.cardsPageController =
-                            PageController(viewportFraction: 0.2);
-                      } else {
-                        dashboardController.cardsPageController =
-                            PageController(viewportFraction: 0.5);
-                      }
-                      return OnceLoadableWidget(
-                        cardsController: cardsController,
-                        dashboardController: dashboardController,
-                        dio: dio,
-                      );
-                    }),
-                    MultiLoadableWidget(
-                      cardsController: cardsController,
-                      dashboardController: dashboardController,
-                      dio: dio,
-                    )
-                  ]),
-            ),
-          ),
-        ),
-      ],
+      ),
     );
   }
 
@@ -184,10 +277,10 @@ class _OnceLoadableWidgetState extends State<OnceLoadableWidget>
                           height: 260,
                           width: constraints.maxWidth > 600 ? 400 : null,
                           child: NoCardWidget(
-                              onClick: () => Get.to(() => const AddMoneyScreen(
-                                  type: CardType.onceReload)),
-                              cardText:
-                                  'Hurry and get your once loadable card now'),
+                            onClick: () => Get.to(() => const AddMoneyScreen(
+                                type: CardType.onceReload)),
+                            cardText: '',
+                          ),
                         ),
                       ),
                     ),
@@ -371,85 +464,91 @@ class _OnceLoadableWidgetState extends State<OnceLoadableWidget>
                       ),
                     ),
                   if (widget.dashboardController.transactions.isNotEmpty)
-                    SfCartesianChart(primaryXAxis: CategoryAxis(), series: <
-                        ColumnSeries<Transactions, String>>[
-                      ColumnSeries<Transactions, String>(
-                          dataSource: <Transactions>[
-                            Transactions(
-                                'Jan',
+                    SfCartesianChart(
+                        primaryXAxis: CategoryAxis(),
+                        series: <ColumnSeries<Transactions, String>>[
+                          ColumnSeries<Transactions, String>(
+                              dataSource: <Transactions>[
+                                Transactions(
+                                    'Jan',
+                                    widget.dashboardController
+                                        .getMonthlyTotal('Jan')),
+                                Transactions(
+                                    'Feb',
+                                    widget.dashboardController
+                                        .getMonthlyTotal('Feb')),
+                                Transactions(
+                                    'Mar',
+                                    widget.dashboardController
+                                        .getMonthlyTotal('Mar')),
+                                Transactions(
+                                    'Apr',
+                                    widget.dashboardController
+                                        .getMonthlyTotal('Apr')),
+                                Transactions(
+                                    'May',
+                                    widget.dashboardController
+                                        .getMonthlyTotal('May')),
+                                Transactions(
+                                    'Jun',
+                                    widget.dashboardController
+                                        .getMonthlyTotal('Jun')),
+                                Transactions(
+                                    'Jul',
+                                    widget.dashboardController
+                                        .getMonthlyTotal('Jul')),
+                                Transactions(
+                                    'Aug',
+                                    widget.dashboardController
+                                        .getMonthlyTotal('Aug')),
+                                Transactions(
+                                    'Sep',
+                                    widget.dashboardController
+                                        .getMonthlyTotal('Sep')),
+                                Transactions(
+                                    'Oct',
+                                    widget.dashboardController
+                                        .getMonthlyTotal('Oct')),
+                                Transactions(
+                                    'Nov',
+                                    widget.dashboardController
+                                        .getMonthlyTotal('Nov')),
+                                Transactions(
+                                    'Dec',
+                                    widget.dashboardController
+                                        .getMonthlyTotal('Dec')),
+                              ],
+                              color: primaryColor.withOpacity(0.5),
+                              borderRadius: const BorderRadius.only(
+                                  topLeft: Radius.circular(4),
+                                  topRight: Radius.circular(4)),
+                              onPointTap: (pointInteractionDetails) {
                                 widget.dashboardController
-                                    .getMonthlyTotal('Jan')),
-                            Transactions(
-                                'Feb',
-                                widget.dashboardController
-                                    .getMonthlyTotal('Feb')),
-                            Transactions(
-                                'Mar',
-                                widget.dashboardController
-                                    .getMonthlyTotal('Mar')),
-                            Transactions(
-                                'Apr',
-                                widget.dashboardController
-                                    .getMonthlyTotal('Apr')),
-                            Transactions(
-                                'May',
-                                widget.dashboardController
-                                    .getMonthlyTotal('May')),
-                            Transactions(
-                                'Jun',
-                                widget.dashboardController
-                                    .getMonthlyTotal('Jun')),
-                            Transactions(
-                                'Jul',
-                                widget.dashboardController
-                                    .getMonthlyTotal('Jul')),
-                            Transactions(
-                                'Aug',
-                                widget.dashboardController
-                                    .getMonthlyTotal('Aug')),
-                            Transactions(
-                                'Sep',
-                                widget.dashboardController
-                                    .getMonthlyTotal('Sep')),
-                            Transactions(
-                                'Oct',
-                                widget.dashboardController
-                                    .getMonthlyTotal('Oct')),
-                            Transactions(
-                                'Nov',
-                                widget.dashboardController
-                                    .getMonthlyTotal('Nov')),
-                            Transactions(
-                                'Dec',
-                                widget.dashboardController
-                                    .getMonthlyTotal('Dec')),
-                          ],
-                          color: primaryColor.withOpacity(0.5),
-                          borderRadius: const BorderRadius.only(
-                              topLeft: Radius.circular(4),
-                              topRight: Radius.circular(4)),
-                          onPointTap: (pointInteractionDetails) {
-                            widget.dashboardController.isShowMonthlyTransactions
-                                    .value =
-                                !widget.dashboardController
-                                    .isShowMonthlyTransactions.value;
-                            if (widget.dashboardController
-                                .isShowMonthlyTransactions.value) {
-                              widget.dashboardController.getMonthlyTransactions(
-                                  widget.dashboardController.getMonth(
-                                      pointInteractionDetails.pointIndex ?? 0));
-                            } else {
-                              widget.dashboardController.monthlyTransactions
-                                  .clear();
-                            }
-                          },
-                          selectionBehavior: SelectionBehavior(
-                              enable: true,
-                              selectedColor: primaryColor,
-                              toggleSelection: true),
-                          xValueMapper: (Transactions sales, _) => sales.year,
-                          yValueMapper: (Transactions sales, _) => sales.sales)
-                    ]),
+                                        .isShowMonthlyTransactions.value =
+                                    !widget.dashboardController
+                                        .isShowMonthlyTransactions.value;
+                                if (widget.dashboardController
+                                    .isShowMonthlyTransactions.value) {
+                                  widget.dashboardController
+                                      .getMonthlyTransactions(widget
+                                          .dashboardController
+                                          .getMonth(pointInteractionDetails
+                                                  .pointIndex ??
+                                              0));
+                                } else {
+                                  widget.dashboardController.monthlyTransactions
+                                      .clear();
+                                }
+                              },
+                              selectionBehavior: SelectionBehavior(
+                                  enable: true,
+                                  selectedColor: primaryColor,
+                                  toggleSelection: true),
+                              xValueMapper: (Transactions sales, _) =>
+                                  sales.year,
+                              yValueMapper: (Transactions sales, _) =>
+                                  sales.sales)
+                        ]),
                   if (widget
                       .dashboardController.isShowMonthlyTransactions.value)
                     const Padding(
@@ -685,19 +784,21 @@ class _MultiLoadableWidgetState extends State<MultiLoadableWidget>
                                                     .kycList[0]
                                                     .link!);
                                             if (await canLaunchUrl(uri)) {
-                                              await launchUrl(uri,mode: LaunchMode.externalApplication);
+                                              await launchUrl(uri,
+                                                  mode: LaunchMode
+                                                      .externalApplication);
                                             } else {
                                               Get.snackbar('Error',
                                                   'Could not launch external browser');
                                             }
                                           } else {
-                                            Get.to(() => const KYCScreen());
+                                            Get.to(() => const KYCNew());
                                           }
                                         },
                                       )
                                     : NoCardWidget(
                                         onClick: () {
-                                          Get.to(() => const KYCScreen());
+                                          Get.to(() => const KYCNew());
                                         },
                                         cardText:
                                             'Hurry and get your multi loadable card now',

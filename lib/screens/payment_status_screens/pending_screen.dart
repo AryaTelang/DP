@@ -5,8 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 
-class FailScreen extends StatelessWidget {
-  const FailScreen({super.key});
+class PendingScreen extends StatelessWidget {
+  const PendingScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -21,22 +21,35 @@ class FailScreen extends StatelessWidget {
         padding: const EdgeInsets.all(20),
         child: SafeArea(
           child: Center(
-            child: Column(mainAxisSize: MainAxisSize.min, children: [
 
-              Image.asset('assets/images/failure.png',height: 100,width: 100,),
+            child: Column(mainAxisSize: MainAxisSize.min, children: [
+              SizedBox(height: 30,),
+
+              Image.asset('assets/images/pending.png',height: 100,width: 100,),
               SizedBox(height: 20,),
               Text(
-                'Failure',
+                'Pending',
                 style: poppinsBold20.copyWith(fontSize: 36),
               ),
               SizedBox(height: 30,),
               Row(
                 children: [
                   SizedBox(width: 20,),
-                  Text("KYC type",
+                  Text("Payment Status",
                     style: poppinsSemiBold24.copyWith(color:grey,fontSize: 16),),
-                  SizedBox(width: width*0.45,),
-                  Text("Minimum",style: TextStyle(fontWeight: FontWeight.w700),),
+                  SizedBox(width: width*0.35,),
+                  Text("Pending",style: TextStyle(fontWeight: FontWeight.w700,color:Color(0xffF59E18) ),),
+                ],
+              ),
+              SizedBox(height: 10,),
+
+              Row(
+                children: [
+                  SizedBox(width: 20,),
+                  Text("Order ID",
+                    style: poppinsSemiBold24.copyWith(color:grey,fontSize: 16),),
+                  SizedBox(width: width*0.5,),
+                  Text("Order ID",style: TextStyle(fontWeight: FontWeight.w700,color:Color(0xffF59E18) ),),
                 ],
               ),
               SizedBox(height: 10,),
@@ -75,29 +88,10 @@ class FailScreen extends StatelessWidget {
                 ],
               ),
 
-               SizedBox(
+              SizedBox(
                 height: height/3,
               ),
-              Align(
-                alignment: Alignment.bottomCenter,
-                child: SizedBox(
-                  width: width,
-                  child: ElevatedButton(
 
-                    style: ElevatedButton.styleFrom(
-                        backgroundColor: Color(0xff4147d5),
-                        padding:
-                            const EdgeInsets.symmetric(horizontal: 40, vertical: 15)),
-                    child: const Text(
-                      'Try Again',
-                      style: TextStyle(fontSize: 16),
-                    ),
-                    onPressed: () {
-                      Get.back();
-                    },
-                  ),
-                ),
-              ),
             ]),
           ),
         ),
